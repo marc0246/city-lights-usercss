@@ -1,0 +1,752 @@
+/* ==UserStyle==
+@name       Vulkan Specification City Lights Theme
+@namespace  https://github.com/marc0246
+@version    1.0.0
+@license    MIT OR Apache-2.0
+==/UserStyle== */
+
+@-moz-document url-prefix("https://registry.khronos.org/vulkan/specs") {
+
+::selection {
+  background-color: #28333d;
+}
+
+* {
+  scrollbar-color: #6e88a0 transparent;
+}
+
+svg [style*="stroke:#000000"],
+svg [style*="stroke:black"],
+svg [stroke="black"] {
+  stroke: #b8c5d1 !important;
+}
+svg [style*="stroke:#808080"] {
+  stroke: #405263 !important;
+}
+svg [style*="stroke:#f"],
+svg [style*="stroke:red"] {
+  stroke: #d95468 !important;
+}
+svg [style*="stroke:#ffffff"] {
+  stroke: none !important;
+}
+
+svg [style*="fill:#000000"],
+svg [style*="fill:black"],
+svg [fill="black"] {
+  fill: #b8c5d1 !important;
+}
+svg [style*="fill:#808080"] {
+  fill: #405263 !important;
+}
+svg [style*="fill:#f"],
+svg [style*="fill:red"],
+svg [fill="red"] {
+  fill: #d95468 !important;
+}
+svg [style*="fill:#ffffff"] {
+  fill: none !important;
+}
+
+svg marker#Triangle {
+  fill: #b8c5d1;
+}
+
+/**************************************************************************************************
+ * style0.css overrides
+ **************************************************************************************************/
+
+body {
+  background-color: #1d252c;
+  font-family: sans-serif;
+  color: #b8c5d1;
+}
+
+.subheader,
+.admonitionblock td.content > .title,
+.audioblock > .title,
+.exampleblock > .title,
+.imageblock > .title,
+.listingblock > .title,
+.literalblock > .title,
+.stemblock > .title,
+.openblock > .title,
+.paragraph > .title,
+.quoteblock > .title,
+table.tableblock > .title,
+.verseblock > .title,
+.videoblock > .title,
+.dlist > .title,
+.olist > .title,
+.ulist > .title,
+.qlist > .title,
+.hdlist > .title {
+  color: #e6ebef;
+}
+
+a {
+  color: #5ec4ff;
+}
+a:hover,
+a:focus {
+  color: #5ec4ff;
+}
+
+h1,
+h2,
+h3,
+#toctitle,
+.sidebarblock > .content > .title,
+h4,
+h5,
+h6 {
+  color: #e6ebef;
+}
+h1 small,
+h2 small,
+h3 small,
+#toctitle small,
+.sidebarblock > .content > .title small,
+h4 small,
+h5 small,
+h6 small {
+  color: #b8c5d1;
+}
+
+mark {
+  background-color: #405263;
+  color: inherit;
+}
+
+hr {
+  border: solid #2e3b47;
+}
+
+code {
+  font-family: monospace;
+  color: #6e88a0;
+}
+
+abbr,
+acronym {
+  color: #e6ebef;
+  border-color: #2e3b47;
+}
+
+blockquote {
+  border-color: #2e3b47;
+}
+blockquote cite {
+  color: #6e88a0;
+}
+blockquote cite a,
+blockquote cite a:visited {
+  color: #6e88a0;
+}
+
+blockquote,
+blockquote p {
+  color: #a6b6c5;
+}
+
+.vcard {
+  border-color: #2e3b47;
+}
+
+table {
+  background-color: transparent;
+  border-color: #2e3b47;
+}
+table thead,
+table tfoot {
+  background-color: #28333d;
+}
+table thead tr th,
+table thead tr td,
+table tfoot tr th,
+table tfoot tr td {
+  color: #b8c5d1;
+}
+table tr th,
+table tr td {
+  color: #6e88a0;
+}
+table tr.even,
+table tr.alt,
+table tr:nth-of-type(even) {
+  background-color: #222b34;
+}
+
+:not(pre) > code {
+  font-size: 1.3333333em;
+  font-weight: 500;
+  letter-spacing: -0.053em;
+}
+
+code code {
+  font-size: 1em;
+}
+
+pre,
+pre > code {
+  color: #6e88a0;
+  font-family: monospace;
+  font-weight: 500;
+  letter-spacing: -0.053em;
+}
+
+.keyseq {
+  color: #a6b6c5;
+}
+
+kbd {
+  font-family: monospace;
+  color: #e6ebef;
+  font-size: 0.7em;
+  line-height: 1.3;
+  background-color: #222b34;
+  border-color: #2e3b47;
+  -moz-box-shadow: unset;
+  -webkit-box-shadow: unset;
+  box-shadow: unset;
+}
+
+.menuseq,
+.menuref {
+  color: #e6ebef;
+}
+
+#header > h1:first-child {
+  color: #e6ebef;
+}
+#header > h1:first-child + #toc {
+  border-color: #2e3b47;
+}
+#header > h1:only-child,
+body.toc2 #header > h1:nth-last-child(2) {
+  border-color: #2e3b47;
+}
+#header .details {
+  border-color: #2e3b47;
+  color: #6e88a0;
+}
+#header .details span.email a {
+  color: #a6b6c5;
+}
+#header .details br + span.author:before {
+  color: #a6b6c5;
+}
+
+#content > h1:first-child:not([class]) {
+  color: #e6ebef;
+  border-color: #2e3b47;
+}
+
+#toc > ul {
+  margin-left: 0;
+}
+
+#toctitle {
+  color: #b8c5d1;
+}
+
+@media only screen and (min-width: 768px) {
+  #toc.toc2 {
+    background-color: #171d23;
+    border-right: none;
+    padding-inline: 0;
+  }
+  body.toc2.toc-right #toc.toc2 {
+    border-left: none;
+  }
+  #toc.toc2 > ul > li {
+    padding-inline: 18px 20px;
+  }
+  body.toc2.toc-left #toc.toc2 > ul > li {
+    border-left: 2px solid transparent;
+  }
+  body.toc2.toc-right #toc.toc2 > ul > li {
+    border-right: 2px solid transparent;
+  }
+  #toc a {
+    color: #6e88a0;
+  }
+
+  #toctitle {
+    margin-inline: 20px;
+  }
+}
+
+#footer-text {
+  color: #b8c5d1;
+}
+
+.sect1 + .sect1 {
+  border-color: #2e3b47;
+}
+
+#content h1 > a.link,
+h2 > a.link,
+h3 > a.link,
+#toctitle > a.link,
+.sidebarblock > .content > .title > a.link,
+h4 > a.link,
+h5 > a.link,
+h6 > a.link {
+  color: #e6ebef;
+}
+#content h1 > a.link:hover,
+h2 > a.link:hover,
+h3 > a.link:hover,
+#toctitle > a.link:hover,
+.sidebarblock > .content > .title > a.link:hover,
+h4 > a.link:hover,
+h5 > a.link:hover,
+h6 > a.link:hover {
+  color: #e6ebef;
+}
+
+.paragraph.lead > p,
+#preamble > .sectionbody > .paragraph:first-of-type p {
+  color: #e6ebef;
+}
+
+.admonitionblock > table td.content {
+  border-color: #2e3b47;
+  color: #6e88a0;
+}
+
+.exampleblock > .content {
+  border-color: #2e3b47;
+  background-color: transparent;
+}
+
+.sidebarblock {
+  border-color: #405263;
+  background-color: transparent;
+}
+.sidebarblock > .content > .title {
+  color: #e6ebef;
+}
+
+.literalblock pre,
+.listingblock pre:not(.highlight),
+.listingblock pre[class="highlight"],
+.listingblock pre[class^="highlight "],
+.listingblock pre.CodeRay,
+.listingblock pre.prettyprint {
+  background-color: transparent;
+}
+.sidebarblock .literalblock pre,
+.sidebarblock .listingblock pre:not(.highlight),
+.sidebarblock .listingblock pre[class="highlight"],
+.sidebarblock .listingblock pre[class^="highlight "],
+.sidebarblock .listingblock pre.CodeRay,
+.sidebarblock .listingblock pre.prettyprint {
+  background-color: transparent;
+}
+
+.literalblock pre,
+.literalblock pre[class],
+.listingblock pre,
+.listingblock pre[class] {
+  border: 1px solid #2e3b47;
+}
+@media only screen and (min-width: 768px) {
+  .literalblock pre,
+  .literalblock pre[class],
+  .listingblock pre,
+  .listingblock pre[class] {
+    font-size: 0.90625rem;
+  }
+}
+
+.literalblock.output pre {
+  color: #6e88a0;
+  background-color: transparent;
+}
+
+.listingblock code[data-lang]:before {
+  color: #6e88a0;
+}
+
+.listingblock.terminal pre .command:before {
+  color: #6e88a0;
+}
+
+pre.pygments .lineno,
+table.pyhltable td:not(.code) {
+  color: #6e88a0;
+  border-color: #2e3b47;
+}
+
+.quoteblock blockquote,
+.quoteblock blockquote p {
+  color: #a6b6c5;
+}
+.quoteblock blockquote:before {
+  color: #e6ebef;
+  /*
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  */
+}
+.quoteblock .quoteblock {
+  border-color: #6e88a0;
+}
+
+.verseblock pre {
+  font-family: sans-serif;
+  color: #a6b6c5;
+}
+
+.quoteblock .attribution cite,
+.verseblock .attribution cite {
+  color: #6e88a0;
+}
+
+table.tableblock,
+th.tableblock,
+td.tableblock {
+  border-color: #2e3b47;
+}
+
+tbody tr th {
+  background-color: #28333d;
+}
+
+tbody tr th,
+tbody tr th p,
+tfoot tr th,
+tfoot tr th p {
+  color: #b8c5d1;
+}
+
+.purple { color: #b62d65; }
+
+.admonitionblock td.icon .icon-note:before {
+  color: #539afc;
+}
+
+h1,
+h2,
+h3,
+#toctitle,
+.sidebarblock > .content > .title,
+h4,
+h5,
+h6 {
+  border-color: #2e3b47;
+}
+
+.literalblock pre,
+.listingblock pre {
+  background-color: transparent;
+}
+
+li > p > a[id^="VUID-"]:before {
+  background-color: #1d252c;
+}
+
+li > p > a[id^="VUID-"].link:hover {
+  color: #5ec4ff;
+}
+
+.vuid {
+  color: #6e88a0;
+  letter-spacing: -0.053em;
+}
+
+/**************************************************************************************************
+ * style1.css overrides
+ **************************************************************************************************/
+
+pre.rouge .cm {
+  color: #405263;
+  font-style: inherit;
+}
+pre.rouge .cp {
+  color: #6e88a0;
+  font-weight: inherit;
+}
+pre.rouge .c1 {
+  color: #405263;
+  font-style: inherit;
+}
+pre.rouge .cs {
+  color: #999999;
+  font-weight: bold;
+  font-style: italic;
+}
+pre.rouge .c,
+pre.rouge .ch,
+pre.rouge .cd,
+pre.rouge .cpf {
+  color: #999988;
+  font-style: italic;
+}
+pre.rouge .err {
+  color: #a61717;
+  background-color: #e3d2d2;
+}
+pre.rouge .gd {
+  color: #000000;
+  background-color: #ffdddd;
+}
+pre.rouge .ge {
+  color: #000000;
+  font-style: italic;
+}
+pre.rouge .gr {
+  color: #aa0000;
+}
+pre.rouge .gh {
+  color: #999999;
+}
+pre.rouge .gi {
+  color: #000000;
+  background-color: #ddffdd;
+}
+pre.rouge .go {
+  color: #888888;
+}
+pre.rouge .gp {
+  color: #555555;
+}
+pre.rouge .gs {
+  font-weight: bold;
+}
+pre.rouge .gu {
+  color: #aaaaaa;
+}
+pre.rouge .gt {
+  color: #aa0000;
+}
+pre.rouge .kc {
+  color: #5ec4ff;
+  font-weight: inherit;
+}
+pre.rouge .kd {
+  color: #5ec4ff;
+  font-weight: inherit;
+}
+pre.rouge .kn {
+  color: #5ec4ff;
+  font-weight: inherit;
+}
+pre.rouge .kp {
+  color: #5ec4ff;
+  font-weight: inherit;
+}
+pre.rouge .kr {
+  color: #5ec4ff;
+  font-weight: inherit;
+}
+pre.rouge .kt {
+  color: #33ced8;
+  font-weight: inherit;
+}
+pre.rouge .k,
+pre.rouge .kv {
+  color: #008b94;
+  font-weight: inherit;
+}
+pre.rouge .mf {
+  color: #e27e8d;
+}
+pre.rouge .mh {
+  color: #e27e8d;
+}
+pre.rouge .il {
+  color: #e27e8d;
+}
+pre.rouge .mi {
+  color: #e27e8d;
+}
+pre.rouge .mo {
+  color: #e27e8d;
+}
+pre.rouge .m,
+pre.rouge .mb,
+pre.rouge .mx {
+  color: #e27e8d;
+}
+pre.rouge .sa {
+  color: #000000;
+  font-weight: bold;
+}
+pre.rouge .sb {
+  color: #d14;
+}
+pre.rouge .sc {
+  color: #d14;
+}
+pre.rouge .sd {
+  color: #d14;
+}
+pre.rouge .s2 {
+  color: #d14;
+}
+pre.rouge .se {
+  color: #d14;
+}
+pre.rouge .sh {
+  color: #d14;
+}
+pre.rouge .si {
+  color: #d14;
+}
+pre.rouge .sx {
+  color: #d14;
+}
+pre.rouge .sr {
+  color: #009926;
+}
+pre.rouge .s1 {
+  color: #d14;
+}
+pre.rouge .ss {
+  color: #990073;
+}
+pre.rouge .s, pre.rouge .dl {
+  color: #d14;
+}
+pre.rouge .na {
+  color: #008080;
+}
+pre.rouge .bp {
+  color: #999999;
+}
+pre.rouge .nb {
+  color: #e27e8d;
+}
+pre.rouge .nc {
+  color: #6e88a0;
+  font-weight: inherit;
+}
+pre.rouge .no {
+  color: #008080;
+}
+pre.rouge .nd {
+  color: #3c5d5d;
+  font-weight: bold;
+}
+pre.rouge .ni {
+  color: #800080;
+}
+pre.rouge .ne {
+  color: #990000;
+  font-weight: bold;
+}
+pre.rouge .nf,
+pre.rouge .fm {
+  color: #70e1e8;
+  font-weight: inherit;
+}
+pre.rouge .nl {
+  color: #990000;
+  font-weight: bold;
+}
+pre.rouge .nn {
+  color: #555555;
+}
+pre.rouge .nt {
+  color: #000080;
+}
+pre.rouge .vc {
+  color: #008080;
+}
+pre.rouge .vg {
+  color: #008080;
+}
+pre.rouge .vi {
+  color: #008080;
+}
+pre.rouge .nv,
+pre.rouge .vm {
+  color: #008080;
+}
+pre.rouge .ow {
+  color: #5ec4ff;
+  font-weight: inherit;
+}
+pre.rouge .o {
+  color: #5ec4ff;
+  font-weight: inherit;
+}
+pre.rouge .w {
+  color: #bbbbbb;
+}
+pre.rouge {
+  background-color: transparent;
+}
+
+/**************************************************************************************************
+ * chunked.css overrides
+ **************************************************************************************************/
+
+div.searchbox {
+  width: 100%;
+  padding: 0 1.5em;
+  background-color: transparent;
+}
+div.searchbox input {
+  width: 100% !important;
+  padding: 4px 6px;
+  border: none;
+  border-radius: 2px;
+  background-color: #333f4a;
+  color: #b8c5d1;
+  outline: none;
+}
+div.searchbox div.results {
+  border-color: #2e3b47;
+  border-radius: 2px;
+}
+
+@media only screen and (min-width: 768px) {
+  div.searchbox {
+    max-width: calc(15em - 20px);
+    padding: 20px 0 0 20px;
+    background-color: #171d23;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  div.searchbox {
+    max-width: calc(20em - 20px);
+  }
+}
+
+/**************************************************************************************************
+ * asciidoctor-chunker.css overrides
+ **************************************************************************************************/
+
+.nav {
+  color: #b8c5d1;
+}
+
+.nav:hover {
+  color: #6e88a0;
+}
+
+.nav-next {
+  float: right;
+  display: block;
+}
+
+.nav-prev {
+  float: left;
+  display: block;
+}
+
+#toc li {
+  padding: 0.07rem;
+}
+
+li.current {
+  border-color: #478dff !important;
+  border-radius: 0;
+  background-color: transparent;
+}
+
+}
